@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="LabelFor">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="251dp"
+        android:layout_height="35dp"
+        android:text="@string/insert_the_logic_formula"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:textAlignment="center" />
+
+    <Button
+        android:id="@+id/Read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="Read"
+        android:text="@string/validate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FormulaText" />
+
+    <EditText
+        android:id="@+id/FormulaText"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/ErrorText"
+        android:visibility="invisible"
+        android:layout_width="332dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/textview"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="@+id/FormulaText"
+        app:layout_constraintTop_toTopOf="@+id/FormulaText" />
+
+    <TextView
+        android:id="@+id/Legend"
+        android:layout_width="296dp"
+        android:layout_height="176dp"
+        android:text="@string/legend_natoms_a_z_nand_nor_nnot_nallowed_parenthesis"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FormulaText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="backToMainPage"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cnf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="convertToCNFText"
+        android:text="@string/fnc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dnf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:text="@string/fnd"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnf" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="@+id/dnf"
+        app:layout_constraintTop_toBottomOf="@+id/dnf" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="revert"
+        android:text="@string/revert"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/saveProposition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="136dp"
+        android:onClick="save"
+        android:text="@string/save_proposition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="load"
+        android:text="@string/load_proposition"
+        app:layout_constraintStart_toStartOf="@+id/saveProposition"
+        app:layout_constraintTop_toBottomOf="@+id/saveProposition" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="Delete Proposition"
+        app:layout_constraintStart_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

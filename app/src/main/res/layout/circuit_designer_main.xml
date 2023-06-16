@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add the PointSelectionView -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/ANDGateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addANDGate"
+            android:text="AND" />
+
+        <Button
+            android:id="@+id/ORGateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addORGate"
+            android:text="OR" />
+
+        <Button
+            android:id="@+id/NOTGateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addNOTGate"
+            android:text="NOT" />
+
+        <Button
+            android:id="@+id/INPUTGateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addInputGate"
+            android:text="INPUT" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="619dp"
+        android:background="?attr/colorPrimary"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/OUTPUTGateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addOutputGate"
+            android:text="OUTPUT" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backToMainPage"
+            android:text="Back" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.logicsimulator.Gates.GateView
+        android:id="@+id/circuit_designer"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="112dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="638dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/button"
+        android:onClick="showPopup"
+        android:src="@drawable/ic_baseline_save_24"
+        app:backgroundTint="@color/black"
+        app:layout_anchorGravity="top|end"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>

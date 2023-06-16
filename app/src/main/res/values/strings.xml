@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Logic Simulator</string>
+    <string name="read_input">Read Input</string>
+    <string name="insert_the_logic_formula">Insert the logic formula</string>
+    <string name="logicsim">LogicSIM</string>
+    <string name="logical_proposition">Logical Proposition</string>
+    <string name="circuit_designer">Circuit Designer</string>
+    <string name="textview">TextView</string>
+    <string name="legend_natoms_a_z_nand_nor_nnot_nallowed_parenthesis">Legend:\nAtoms: A-Z\nAND: ^\nOR: |\nNOT: !\nAllowed Parenthesis: ()</string>
+    <string name="back">Back</string>
+    <string name="validate">Validate</string>
+    <string name="button">Button</string>
+    <string name="fnc">FNC</string>
+    <string name="fnd">FND</string>
+    <string name="revert">revert</string>
+    <string name="save_proposition">Save Proposition</string>
+    <string name="load_proposition">Load Proposition</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item1"
+        android:title="item 1"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item2"
+        android:title="item 2"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item3"
+        android:title="item 3"
+        app:showAsAction="never">
+    <menu>
+        <item android:id="@+id/item31"
+            android:title="item 31"
+            app:showAsAction="never"/>
+        <item android:id="@+id/item32"
+            android:title="item 32"
+            app:showAsAction="never"/>
+        <item android:id="@+id/item33"
+            android:title="item 33"
+            app:showAsAction="never"/>
+    </menu>
+    </item>
+
+    <item android:id="@+id/item4"
+        android:title="item 4"
+        app:showAsAction="never"/>
+
+
+</menu>

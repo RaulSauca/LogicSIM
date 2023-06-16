@@ -1,0 +1,36 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd1831b443, pid=3904, tid=21032
+#
+# JRE version: OpenJDK Runtime Environment (11.0.12+7) (build 11.0.12+7-b1504.28-7817840)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.12+7-b1504.28-7817840, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x37b443]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant org.gradle.launcher.daemon.bootstrap.GradleDaemon 7.3.3
+
+Host: AMD Ryzen 7 5800H with Radeon Graphics         , 16 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.2913)
+Time: Thu Jun 15 20:13:15 2023 GTB Daylight Time elapsed time: 16758.291531 seconds (0d 4h 39m 18s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ed59e25800):  JavaThread "Build operations Thread 12" [_thread_in_vm, id=21032, stack(0x0000006050300000,0x0000006050400000)]
+
+Stack: [0x0000006050300000,0x0000006050400000],  sp=0x00000060503ff7e0,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x37b443]
+V  [jvm.dll+0x5fbc12]
+V  [jvm.dll+0x37bdfa]
+V  [jvm.dll+0x37c087]
+V  [jvm.dll+0x3eb75d]
+V  [jvm.dll+0x6f9b7f]
+V  [jvm.dll+0x6f26a5]
