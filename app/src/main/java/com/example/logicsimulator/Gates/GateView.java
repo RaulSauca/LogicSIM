@@ -622,8 +622,6 @@ public class GateView extends View implements GestureDetector.OnGestureListener,
             }
 
         }
-        System.out.println(rawCircuit);
-        System.out.println(points);
         resetValues();
         evaluateCircuit();
     }
